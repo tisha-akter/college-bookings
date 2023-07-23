@@ -10,7 +10,8 @@
       "admissionProcess": "To get admitted to Sunshine College, students need to fill out an online application form available on the college website. Admission is based on merit and a written test for certain courses.",
       "eventsDetails": "The Annual Cultural Fest at Sunshine College is a grand celebration of arts, music, dance, and creativity. Students from various colleges participate and showcase their talents.",
       "researchWorks": "Sunshine College has a rich history of groundbreaking research. Our faculty and students have contributed to various fields, including science, technology, humanities, and social sciences.",
-      "sportsCategories": "The sports facilities at Sunshine College are top-notch. We offer a wide range of sports categories, including football, basketball, cricket, badminton, tennis, and more."
+      "sportsCategories": "The sports facilities at Sunshine College are top-notch. We offer a wide range of sports categories, including football, basketball, cricket, badminton, tennis, and more.",
+      "graduatePicture": "https://i.ibb.co/88QHqQJ/img1.jpg"
     },
     {
       "id": 2,
@@ -23,7 +24,8 @@
       "admissionProcess": "Stellar College follows a comprehensive admission process that includes an entrance exam and a personal interview. Students need to apply online and meet the eligibility criteria.",
       "eventsDetails": "Tech Fest at Stellar College is a platform for tech enthusiasts to showcase their innovative projects and ideas. The event includes workshops, competitions, and expert talks.",
       "researchWorks": "Stellar College is at the forefront of research and innovation. Our researchers are making significant contributions to fields like artificial intelligence, biotechnology, and renewable energy.",
-      "sportsCategories": "Stellar College promotes a healthy and active lifestyle through its sports programs. We offer sports categories like cricket, volleyball, table tennis, swimming, and more."
+      "sportsCategories": "Stellar College promotes a healthy and active lifestyle through its sports programs. We offer sports categories like cricket, volleyball, table tennis, swimming, and more.",
+      "graduatePicture": "https://i.ibb.co/9GwxRdr/img2.jpg"
     },
     {
       "id": 3,
@@ -36,7 +38,8 @@
       "admissionProcess": "Admission to Harmony College is based on the performance in the entrance exam and the student's academic record. The application process is entirely online.",
       "eventsDetails": "The Annual Science Exhibition at Harmony College showcases innovative scientific projects and experiments by students and faculty. It's a platform to encourage scientific curiosity.",
       "researchWorks": "Harmony College has a strong research culture. Our research works span various fields like computer science, environmental studies, chemistry, and more.",
-      "sportsCategories": "Sports is an integral part of life at Harmony College. We offer sports categories like tennis, badminton, chess, athletics, and more to promote physical fitness and sportsmanship."
+      "sportsCategories": "Sports is an integral part of life at Harmony College. We offer sports categories like tennis, badminton, chess, athletics, and more to promote physical fitness and sportsmanship.",
+      "graduatePicture": "https://i.ibb.co/G3v5syK/img4.jpg"
     },
     {
       "id": 4,
@@ -49,7 +52,8 @@
       "admissionProcess": "Admissions to TechHub College are based on an online application form and a technical aptitude test. The college also considers extracurricular activities and leadership qualities.",
       "eventsDetails": "The Science Fair at TechHub College is an annual event that allows students to showcase their scientific projects and experiments. It encourages innovation and scientific thinking.",
       "researchWorks": "TechHub College is renowned for its research endeavors in cutting-edge technologies. Our researchers collaborate with leading industry experts to solve real-world challenges.",
-      "sportsCategories": "TechHub College promotes sports and fitness among students. We offer sports categories like table tennis, swimming, athletics, and yoga to keep students active and healthy."
+      "sportsCategories": "TechHub College promotes sports and fitness among students. We offer sports categories like table tennis, swimming, athletics, and yoga to keep students active and healthy.",
+      "graduatePicture": "https://i.ibb.co/qy8Qth2/img5.jpg"
     },
     {
       "id": 5,
@@ -62,7 +66,8 @@
       "admissionProcess": "Artisans College considers academic performance and creative potential for admissions. Students can apply through an online portal and attend an interview or portfolio review.",
       "eventsDetails": "The Literary Fest at Artisans College celebrates literature, poetry, and storytelling. Renowned authors and poets are invited, and students get a chance to interact with them.",
       "researchWorks": "Artisans College encourages artistic and cultural research. Our students and faculty explore various art forms, traditional practices, and contemporary expressions.",
-      "sportsCategories": "Sports and games are an essential part of Artisans College's campus life. We offer sports categories like athletics, chess, volleyball, and basketball to foster a competitive spirit."
+      "sportsCategories": "Sports and games are an essential part of Artisans College's campus life. We offer sports categories like athletics, chess, volleyball, and basketball to foster a competitive spirit.",
+      "graduatePicture": "https://i.ibb.co/hVgF5nk/img6.jpg"
     },
     {
       "id": 6,
@@ -75,7 +80,8 @@
       "admissionProcess": "Greenfield Academy values students' passion for the arts and academics. Admissions are based on merit, an entrance exam, and an evaluation of creative abilities.",
       "eventsDetails": "The Dance Competition at Greenfield Academy is an exciting event that showcases various dance forms and talents. It's a platform for students to express themselves through dance.",
       "researchWorks": "Greenfield Academy focuses on research in environmental sustainability and green technologies. Our students are actively involved in projects related to eco-friendly solutions.",
-      "sportsCategories": "At Greenfield Academy, we encourage students to embrace outdoor activities and sports for holistic development. We offer sports categories like hockey, cycling, and archery."
+      "sportsCategories": "At Greenfield Academy, we encourage students to embrace outdoor activities and sports for holistic development. We offer sports categories like hockey, cycling, and archery.",
+      "graduatePicture": "https://i.ibb.co/M6Z77Yd/img7.jpg"
     },
     {
       "id": 7,
@@ -88,7 +94,8 @@
       "admissionProcess": "Global Business College conducts a rigorous admission process that includes aptitude tests, group discussions, and personal interviews. Students must have a strong academic background.",
       "eventsDetails": "The Business Conclave at Global Business College is a prestigious event that brings together industry leaders and students to discuss global business trends and opportunities.",
       "researchWorks": "Global Business College focuses on research in finance, marketing, and business management. Our faculty and students contribute to solving real-world business challenges.",
-      "sportsCategories": "Global Business College believes in the holistic development of students. We offer sports categories like gymnastics, karate, and swimming to promote discipline and fitness."
+      "sportsCategories": "Global Business College believes in the holistic development of students. We offer sports categories like gymnastics, karate, and swimming to promote discipline and fitness.",
+      "graduatePicture": "https://i.ibb.co/fdpCmBB/img9.jpg"
     },
     {
       "id": 8,
@@ -101,7 +108,8 @@
       "admissionProcess": "Admissions to Creative Art College are based on a portfolio review and an assessment of creative potential. Students must demonstrate a passion for arts and design.",
       "eventsDetails": "The Art Fair at Creative Art College is an exhibition of creative works by students and faculty. It showcases various art forms, from painting and sculpture to digital art and design.",
       "researchWorks": "Creative Art College fosters artistic research and experimentation. Our students explore innovative approaches to art, design, and multimedia expressions.",
-      "sportsCategories": "At Creative Art College, sports and physical activities complement creative pursuits. We offer sports categories like swimming, basketball, and yoga for overall well-being."
+      "sportsCategories": "At Creative Art College, sports and physical activities complement creative pursuits. We offer sports categories like swimming, basketball, and yoga for overall well-being.",
+      "graduatePicture": "https://i.ibb.co/VpDPJrG/img10.jpg"
     },
     {
       "id": 9,
@@ -114,7 +122,8 @@
       "admissionProcess": "Admission to Sports Academy is primarily based on sports achievements and talent. Students undergo a fitness assessment and demonstrate proficiency in their chosen sport.",
       "eventsDetails": "The Sports Festival at Sports Academy is a high-energy event that celebrates sportsmanship and teamwork. It includes various sports competitions and friendly matches.",
       "researchWorks": "Sports Academy is committed to advancing sports-related research and training techniques. Our faculty works closely with athletes to enhance performance and prevent injuries.",
-      "sportsCategories": "At Sports Academy, sports are the heart of our educational approach. We offer sports categories like volleyball, football, athletics, and cricket to nurture sporting excellence."
+      "sportsCategories": "At Sports Academy, sports are the heart of our educational approach. We offer sports categories like volleyball, football, athletics, and cricket to nurture sporting excellence.",
+      "graduatePicture": "https://i.ibb.co/FXSV4kJ/img12.jpg"
     }
   ]
   
