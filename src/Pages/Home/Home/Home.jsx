@@ -1,8 +1,9 @@
+import CollegeCard from "../CollegeCard/CollegeCard";
 
 const Home = () => {
     return (
         <div>
-            <h2>this is home</h2>
+            <CollegeCard></CollegeCard>
         </div>
     );
 };
