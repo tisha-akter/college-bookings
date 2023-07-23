@@ -47,7 +47,7 @@ const Header = () => {
                         </ul>
                     </div>
     
-                    <h2 className="text-2xl font-bold font-serif">
+                    <h2 className="text-2xl font-bold font-serif text-indigo-600">
                         College Booking
                     </h2>
 
@@ -90,7 +90,7 @@ const Header = () => {
                 </div>
 
                 <div className="navbar-end gap-2">
-                    <button>login</button>
+                    <button className="btn  bg-indigo-700 text-white">login</button>
                 </div>
             </div>
         </div>

@@ -51,7 +51,7 @@ const CollegeCard = () => {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                 {filteredColleges.slice(0, visibleColleges).map((college) => (
-                    <div className="card w-full bg-base-100 shadow-xl" key={college.id}>
+                    <div className="card w-full bg-base-100 shadow-xl border border-indigo-600" key={college.id}>
                         <figure className="px-10 pt-10">
                             <img src={college.image} alt="College" className="rounded-xl" />
                         </figure>
@@ -89,7 +89,7 @@ const CollegeCard = () => {
             </div>
             {visibleColleges < filteredColleges.length && (
                 <button
-                    className="btn btn-primary mt-4 mx-auto block text-white bg-indigo-700 rounded-xl border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600"
+                    className="btn btn-primary  mx-auto mb-5 mt-5 block text-white bg-indigo-700 rounded-xl border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600"
                     onClick={() => setVisibleColleges((prev) => prev + 3)}
                 >
                     Load More

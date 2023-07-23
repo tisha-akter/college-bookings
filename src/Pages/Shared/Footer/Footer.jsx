@@ -7,7 +7,7 @@ const Footer = () => {
         <footer>
             <div className="footer p-10 bg-neutral text-neutral-content">
                 <div>
-                    <h2 className="text-3xl font-bold font-serif">
+                    <h2 className="text-2xl font-bold font-serif text-indigo-600">
                         College Booking
                     </h2>
                     <p>College Booking Ltd.<br />Providing reliable education information since 1992</p>
