@@ -1,5 +1,6 @@
 
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const CollegeCard = () => {
     const [collegesData, setCollegesData] = useState([]);
@@ -18,6 +19,7 @@ const CollegeCard = () => {
     const filteredColleges = collegesData.filter((college) =>
         college.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
+    
 
     return (
         <div className="container mx-auto">
@@ -79,9 +81,11 @@ const CollegeCard = () => {
                                 </h2>
                             </div>
                             <div className="">
-                                <button className="btn btn-primary ml-auto text-white bg-indigo-700 rounded-xl border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600">
-                                    View Detail
-                                </button>
+                                <Link to={`/college-card-details/${college.id}`}>
+                                    <button className="btn btn-primary ml-auto text-white bg-indigo-700 rounded-xl border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600">
+                                        View Detail
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
