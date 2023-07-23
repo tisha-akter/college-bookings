@@ -7,7 +7,7 @@ const CollegeCard = () => {
     const [visibleColleges, setVisibleColleges] = useState(3);
 
     useEffect(() => {
-        fetch('/CardData.json')
+        fetch('http://localhost:5000/collegeDetails')
             .then((response) => response.json())
             .then((data) => setCollegesData(data))
             .catch((error) => console.error('Error fetching colleges data:', error));
@@ -50,7 +50,7 @@ const CollegeCard = () => {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                 {filteredColleges.slice(0, visibleColleges).map((college) => (
-                    <div className="card w-full bg-base-100 shadow-xl" key={college.id}>
+                    <div className="card w-full bg-base-100 shadow-xl" key={college._id}>
                         <figure className="px-10 pt-10">
                             <img src={college.image} alt="College" className="rounded-xl" />
                         </figure>
@@ -78,7 +78,7 @@ const CollegeCard = () => {
                                 </h2>
                             </div>
                             <div className="">
-                                <Link to={`/college-card-details/${college.id}`}>
+                                <Link to={`/college-card-details/${college._id}`}>
                                     <button className="btn btn-primary ml-auto text-white bg-indigo-700 rounded-xl border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600">
                                         View Detail
                                     </button>

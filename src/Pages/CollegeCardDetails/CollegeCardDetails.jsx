@@ -7,7 +7,7 @@ const CollegeCardDetails = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('/CardData.json')
+        fetch('http://localhost:5000/collegeDetails')
             .then((response) => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
@@ -16,7 +16,7 @@ const CollegeCardDetails = () => {
             })
             .then((data) => {
                 // Find the college with the matching cardId
-                const selectedCollege = data.find((college) => college.id == cardId);
+                const selectedCollege = data.find((college) => college._id == cardId);
                 setCollegeData(selectedCollege);
                 setLoading(false);
             })

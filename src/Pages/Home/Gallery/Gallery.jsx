@@ -4,7 +4,7 @@ const Gallery = () => {
     const [collegesData, setCollegesData] = useState([]);
 
     useEffect(() => {
-        fetch('/CardData.json')
+        fetch('http://localhost:5000/collegeDetails')
             .then((response) => response.json())
             .then((data) => setCollegesData(data))
             .catch((error) => console.error('Error fetching colleges data:', error));
@@ -17,7 +17,7 @@ const Gallery = () => {
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {collegesData.map((college) => (
-                    <div key={college.id} className="relative">
+                    <div key={college._id} className="relative">
                         <img
                             src={college.graduatePicture}
                             alt={`College Graduate - ${college.name}`}
