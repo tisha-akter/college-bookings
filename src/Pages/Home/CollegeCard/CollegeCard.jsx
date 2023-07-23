@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -8,7 +7,6 @@ const CollegeCard = () => {
     const [visibleColleges, setVisibleColleges] = useState(3);
 
     useEffect(() => {
-        // Fetch the college data from CardData.json
         fetch('/CardData.json')
             .then((response) => response.json())
             .then((data) => setCollegesData(data))
@@ -19,7 +17,6 @@ const CollegeCard = () => {
     const filteredColleges = collegesData.filter((college) =>
         college.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
-    
 
     return (
         <div className="container mx-auto">
@@ -53,7 +50,7 @@ const CollegeCard = () => {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                 {filteredColleges.slice(0, visibleColleges).map((college) => (
-                    <div className="card w-full bg-base-100 shadow-xl border border-indigo-600" key={college.id}>
+                    <div className="card w-full bg-base-100 shadow-xl" key={college.id}>
                         <figure className="px-10 pt-10">
                             <img src={college.image} alt="College" className="rounded-xl" />
                         </figure>
@@ -65,19 +62,19 @@ const CollegeCard = () => {
                             </div>
                             <div className="mb-5 md:mb-10">
                                 <h2 className="card-title font-medium mb-3 text-gray-600">
-                                    <span className="text-bold text-gray-900 text-2xl">Admission Date:</span>{' '}
+                                    <span className="font-semibold text-gray-900 text-2xl">Admission Date:</span>{' '}
                                     {college.admissionDates}
                                 </h2>
                                 <h2 className="card-title font-medium mb-3 text-gray-600">
-                                    <span className="text-bold text-gray-900 text-2xl">Events:</span> {college.events}
+                                    <span className="font-semibold text-gray-900 text-2xl">Events:</span> {college.events}
                                 </h2>
 
                                 <h2 className="card-title 0 font-medium mb-3 text-gray-600">
-                                    <span className="text-bold text-gray-900 text-2xl">Research History: </span>{' '}
+                                    <span className="font-semibold text-gray-900 text-2xl">Research History: </span>{' '}
                                     {college.researchHistory}
                                 </h2>
                                 <h2 className="card-title font-medium mb-3 text-gray-600">
-                                    <span className="text-bold text-gray-900 text-2xl">Sports: </span> {college.sports}
+                                    <span className="font-semibold text-gray-900 text-2xl">Sports: </span> {college.sports}
                                 </h2>
                             </div>
                             <div className="">

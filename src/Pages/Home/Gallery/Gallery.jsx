@@ -4,7 +4,6 @@ const Gallery = () => {
     const [collegesData, setCollegesData] = useState([]);
 
     useEffect(() => {
-        // Fetch the college data from CardData.json
         fetch('/CardData.json')
             .then((response) => response.json())
             .then((data) => setCollegesData(data))
@@ -19,13 +18,14 @@ const Gallery = () => {
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {collegesData.map((college) => (
                     <div key={college.id} className="relative">
-                        <div
+                        <img
+                            src={college.graduatePicture}
+                            alt={`College Graduate - ${college.name}`}
                             className="w-full h-full bg-cover rounded-lg"
-                            style={{ backgroundImage: `url(${college.graduatePicture})`, paddingTop: '100%' }}
-                        >
-                            <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 bg-black bg-opacity-75 hover:opacity-100">
-                                <h3 className="text-lg font-medium text-white">{college.name}</h3>
-                            </div>
+                            loading="lazy"
+                        />
+                        <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 bg-black bg-opacity-75 hover:opacity-100">
+                            <h3 className="text-lg font-medium text-white">{college.name}</h3>
                         </div>
                     </div>
                 ))}
@@ -35,6 +35,7 @@ const Gallery = () => {
 };
 
 export default Gallery;
+
 
 
 

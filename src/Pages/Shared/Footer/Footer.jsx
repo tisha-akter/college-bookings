@@ -23,7 +23,7 @@ const Footer = () => {
                     <span className="footer-title">Contact us</span>
                     <Link><span className='font-semibold'>Address:</span> Road # 137, Block # SE(F), <br /> Gulshan-2, Dhaka-1212.</Link>
                     <Link><span className='font-semibold'>Phone: </span> 012893749</Link>
-                    <Link><span className='font-semibold'>Email:</span> art&craft@gmail.com</Link>
+                    <Link><span className='font-semibold'>Email:</span> collegebooking23@gmail.com</Link>
                 </div>
 
                 <div>
