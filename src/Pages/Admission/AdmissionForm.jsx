@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 const AdmissionForm = () => {
-    const { collegeId } = useParams(); 
+    const { collegeId } = useParams();
 
     const [candidateName, setCandidateName] = useState('');
     const [subject, setSubject] = useState('');
@@ -15,7 +16,7 @@ const AdmissionForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        const formData = {
+        const newFormData = {
             collegeId,
             candidateName,
             subject,
@@ -26,7 +27,41 @@ const AdmissionForm = () => {
             image,
         };
 
-        console.log(formData);
+        fetch('http://localhost:5000/formData', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(newFormData),
+        })
+            .then((res) => res.json())
+            .then((data) => {
+                console.log(data);
+                if (data.insertedId) {
+                    Swal.fire({
+                        title: 'Success!',
+                        text: 'Your Application is completed!!',
+                        icon: 'success',
+                        confirmButtonText: 'Cool',
+                    });
+                } else {
+                    Swal.fire({
+                        title: 'Error!',
+                        text: 'Failed to submit application. Please try again later.',
+                        icon: 'error',
+                        confirmButtonText: 'Okay',
+                    });
+                }
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                Swal.fire({
+                    title: 'Error!',
+                    text: 'An error occurred. Please try again later.',
+                    icon: 'error',
+                    confirmButtonText: 'Okay',
+                });
+            });
     };
 
     return (

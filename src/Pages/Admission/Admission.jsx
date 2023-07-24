@@ -5,7 +5,7 @@ const Admission = () => {
     const [colleges, setColleges] = useState([]);
 
     useEffect(() => {
-        fetch('https://college-bookings-server-tisha-akter.vercel.app/collegeDetails')
+        fetch('http://localhost:5000/collegeDetails')
             .then((res) => res.json())
             .then((data) => setColleges(data));
     }, []);
@@ -25,7 +25,7 @@ const Admission = () => {
                         <Link
                             key={college._id}
                             to={`/admission/${college._id}`}
-                            className="p-4 border rounded shadow"
+                            className="p-4 border rounded shadow m-4"
                         >
                             {college.name}
                         </Link>
