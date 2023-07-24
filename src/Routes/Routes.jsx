@@ -11,6 +11,7 @@ import Error from "../../Error";
 import Login from "../Pages/Login/Login";
 import SignUp from "../Pages/SignUp/SignUP";
 import PrivateRoute from "./PrivateRoute";
+import AdmissionForm from "../Pages/Admission/AdmissionForm";
 
 
 export const router = createBrowserRouter([
@@ -25,6 +26,10 @@ export const router = createBrowserRouter([
       {
         path: '/admission',
         element: <Admission></Admission>
+      },
+      {
+        path: 'admission/:collegeId',
+        element: <AdmissionForm></AdmissionForm>,
       },
       {
         path: '/colleges',
