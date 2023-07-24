@@ -7,6 +7,7 @@ import Admission from "../Pages/Admission/Admission";
 import Colleges from "../Pages/Colleges/Colleges";
 import MyCollege from "../Pages/MyCollege/MyCollege";
 import CollegeCardDetails from "../Pages/CollegeCardDetails/CollegeCardDetails";
+import Error from "../../Error";
 
 export const router = createBrowserRouter([
   {
@@ -35,4 +36,11 @@ export const router = createBrowserRouter([
       },
     ]
   },
+
+  
+  {
+    path: '*',
+    element: <Error></Error>
+  }
+
 ]);
