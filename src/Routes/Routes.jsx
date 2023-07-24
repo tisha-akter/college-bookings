@@ -8,6 +8,10 @@ import Colleges from "../Pages/Colleges/Colleges";
 import MyCollege from "../Pages/MyCollege/MyCollege";
 import CollegeCardDetails from "../Pages/CollegeCardDetails/CollegeCardDetails";
 import Error from "../../Error";
+import Login from "../Pages/Login/Login";
+import SignUp from "../Pages/SignUp/SignUP";
+import PrivateRoute from "./PrivateRoute";
+
 
 export const router = createBrowserRouter([
   {
@@ -32,7 +36,15 @@ export const router = createBrowserRouter([
       },
       {
         path: 'college-card-details/:cardId',
-        element: <CollegeCardDetails></CollegeCardDetails>,
+        element: <PrivateRoute><CollegeCardDetails></CollegeCardDetails></PrivateRoute>,
+      },
+      {
+        path: '/login',
+        element: <Login></Login>
+      },
+      {
+        path: '/sign-up',
+        element: <SignUp></SignUp>
       },
     ]
   },

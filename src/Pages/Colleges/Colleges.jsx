@@ -6,7 +6,7 @@ const Colleges = () => {
 
     useEffect(() => {
         // Fetch the college data from CardData.json
-        fetch('http://localhost:5000/collegeDetails')
+        fetch('https://college-bookings-server-tisha-akter.vercel.app/collegeDetails')
             .then((response) => response.json())
             .then((data) => setCollegesData(data))
             .catch((error) => console.error('Error fetching colleges data:', error));

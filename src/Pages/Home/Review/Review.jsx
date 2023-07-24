@@ -9,7 +9,7 @@ const Review = () => {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/collegeDetails')
+        fetch('https://college-bookings-server-tisha-akter.vercel.app/collegeDetails')
             .then((res) => res.json())
             .then((data) => setReviews(data));
     }, []);

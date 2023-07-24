@@ -7,7 +7,7 @@ const CollegeCardDetails = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('http://localhost:5000/collegeDetails')
+        fetch('https://college-bookings-server-tisha-akter.vercel.app/collegeDetails')
             .then((response) => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');

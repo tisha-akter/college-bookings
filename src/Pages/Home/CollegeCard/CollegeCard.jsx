@@ -7,7 +7,7 @@ const CollegeCard = () => {
     const [visibleColleges, setVisibleColleges] = useState(3);
 
     useEffect(() => {
-        fetch('http://localhost:5000/collegeDetails')
+        fetch('https://college-bookings-server-tisha-akter.vercel.app/collegeDetails')
             .then((response) => response.json())
             .then((data) => setCollegesData(data))
             .catch((error) => console.error('Error fetching colleges data:', error));
